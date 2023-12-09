@@ -3910,82 +3910,6 @@ body.is-preload #banner:after {
 	opacity: 1;
 }
 
-/* CTA */
-
-#cta .inner {
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	max-width: 45em;
-}
-
-#cta .inner header {
-	-moz-order: 1;
-	-webkit-order: 1;
-	-ms-order: 1;
-	order: 1;
-	padding-right: 3em;
-	width: 70%;
-}
-
-#cta .inner header p {
-	color: inherit;
-}
-
-#cta .inner .actions {
-	-moz-order: 2;
-	-webkit-order: 2;
-	-ms-order: 2;
-	order: 2;
-	width: 30%;
-}
-
-@media screen and (min-width: 980px) {
-	iframe {
-		width: 600px;
-		height: 500px;
-	}
-}
-
-@media screen and (max-width: 980px) {
-
-	iframe {
-		width: 100%;
-		height: 100%;
-	}
-
-	#cta .inner {
-		display: block;
-		text-align: left;
-	}
-
-	#cta .inner header {
-		padding-right: 0;
-		width: 100%;
-	}
-
-	#cta .inner .actions {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 20em;
-		width: 100%;
-	}
-
-}
-
-@media screen and (max-width: 736px) {
-
-	#cta .inner .actions {
-		max-width: none;
-	}
-
-	iframe {
-		width: 100%;
-		height: 100%;
-	}
-}
-
 /* Main */
 
 #main>header {
@@ -4172,4 +4096,121 @@ body.is-mobile.landing .wrapper.style4 {
 
 body.is-mobile.landing #footer {
 	background-color: #1d242a;
+}
+
+
+.wrapper>.inner1 {
+	width: 60em;
+	margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+	.wrapper>.inner1 {
+		width: 90%;
+		width: 60em;
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+
+	.wrapper>.inner1 {
+		width: 100%;
+	}
+
+}
+
+#cta .inner1 {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	max-width: 45em;
+}
+
+#cta .inner1 header {
+	-moz-order: 1;
+	-webkit-order: 1;
+	-ms-order: 1;
+	order: 1;
+	padding-right: 3em;
+	width: 70%;
+}
+
+#cta .inner1 header p {
+	color: inherit;
+}
+
+#cta .inner1 .actions {
+	-moz-order: 2;
+	-webkit-order: 2;
+	-ms-order: 2;
+	order: 2;
+	width: 30%;
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+	iframe {
+		width: 1000px;
+		height: 550px;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	iframe {
+		width: 475px;
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+
+	.wrapper>.inner1 {}
+
+	iframe {
+		width: 350px;
+		height: 500px;
+	}
+
+	#cta .inner1 {
+		text-align: left;
+	}
+
+	#cta .inner1 header {
+		padding-right: 0;
+		width: 100%;
+	}
+
+	#cta .inner1 .actions {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 20em;
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 736px) {
+
+	#cta .inner1 .actions {
+		max-width: none;
+	}
+
+	#cta .inner1 {
+		display: block;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
 }
